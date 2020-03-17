@@ -1,32 +1,32 @@
 {
-    "anims": [
+  "anims": [
+    {
+      "key": "progressing",
+      "type": "frames",
+      "repeat": -1,
+      "frameRate": 8,
+      "frames": [
         {
-            "key": "progressing",
-            "type": "frames",
-            "repeat": -1,
-            "frameRate": 8,
-            "frames": [
-                {
-                    "key": "default_name",
-                    "frame": "sprite_0"
-                },
-                {
-                    "key": "default_name",
-                    "frame": "sprite_1"
-                },
-                {
-                    "key": "default_name",
-                    "frame": "sprite_2"
-                },
-                {
-                    "key": "default_name",
-                    "frame": "sprite_3"
-                },
-                {
-                    "key": "default_name",
-                    "frame": "sprite_4"
-                }
-            ]
+          "key": "default_name",
+          "frame": "sprite_0"
+        },
+        {
+          "key": "default_name",
+          "frame": "sprite_1"
+        },
+        {
+          "key": "default_name",
+          "frame": "sprite_2"
+        },
+        {
+          "key": "default_name",
+          "frame": "sprite_3"
+        },
+        {
+          "key": "default_name",
+          "frame": "sprite_4"
         }
-    ]
+      ]
+    }
+  ]
 }
