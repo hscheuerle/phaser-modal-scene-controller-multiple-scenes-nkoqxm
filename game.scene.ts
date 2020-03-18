@@ -13,11 +13,11 @@ export class GameScene extends Phaser.Scene {
       "https://cdn.jsdelivr.net/gh/hscheuerle/phaser-modal-scene-controller-multiple-scenes-nkoqxm@master/assets/default_name.png",
       atlasJson
     );
+    this.load.animation('default_animations', animJson);
   }
 
   create() {
-    this.anims.create(animJson.anims[0]);
-
+    // this.anims.create(animJson.anims[0]);
     const sprite = this.add.sprite(100, 100, 'default_name').play('progressing');
   }
 }
