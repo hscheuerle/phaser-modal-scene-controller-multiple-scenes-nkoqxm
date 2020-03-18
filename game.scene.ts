@@ -16,8 +16,8 @@ export class GameScene extends Phaser.Scene {
   }
 
   create() {
-    const an = this.anims.create(animJson.anims[0]);
+    this.anims.create(animJson.anims[0]);
 
-    const sprite = this.add.sprite(100, 100, 'default_name').play('progressing');  
+    const sprite = this.add.sprite(100, 100, 'default_name').play('progressing');
   }
 }
