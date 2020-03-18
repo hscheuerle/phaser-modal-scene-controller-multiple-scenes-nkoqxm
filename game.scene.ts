@@ -9,20 +9,15 @@ export class GameScene extends Phaser.Scene {
 
   preload() {
     this.load.atlas(
-      "default-name",
+      "default_name",
       "https://cdn.jsdelivr.net/gh/hscheuerle/phaser-modal-scene-controller-multiple-scenes-nkoqxm@master/assets/default_name.png",
       atlasJson
     );
-
-    this.load.animation(animJson.anims[0]);
   }
 
   create() {
-    const frames = this.anims.generateFrameNames('default-name', { prefix: 'sprite_', start: 0, end: 4});
-    console.log(...(animJson.anims));
-    console.log(frames);
-    const an = this.anims.get('progressing');
-    console.log(an);
-    const sprite = this.add.sprite(100, 100, 'default-name').play('progressing');  
+    const an = this.anims.create(animJson.anims[0]);
+
+    const sprite = this.add.sprite(100, 100, 'default_name').play('progressing');  
   }
 }
